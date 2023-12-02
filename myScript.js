@@ -77,10 +77,67 @@ function play(computerSelection = getComputerChoice(), playersSelection = player
 }
 
 
+//function that impliments a 5-round Rock Paper Scissors game!
+function fiveRoundGame() {
+
+    let Computer = 0;
+    let player = 0;
+    let tie = 0;
+
+    for (i = 0; i < 5; i++) {
+        value = play();
+        if (value == 0) {
+            tie += 1;
+        } else if (value == 1) {
+            Computer += 1;
+        } else {
+            player += 1;
+        }
+
+    }
+
+    if (Computer > 2) {
+        alert("Game Done!! Computer Won!!");
+    } else if (player > 2) {
+        alert("Game Done!! You Won!!");
+    } else {
+        alert("Game Done!! it's a Tie!!");
+    }
+}
+
+
+//function that impliments a 5-round Rock Paper Scissors game!
+function fiveRoundGame() {
+
+    let Computer = 0;
+    let player = 0;
+    let tie = 0;
+
+    for (i = 0; i < 5; i++) {
+        value = play();
+        if (value == 0) {
+            tie += 1;
+        } else if (value == 1) {
+            Computer += 1;
+        } else {
+            player += 1;
+        }
+
+    }
+
+    if (Computer > 2) {
+        alert("Game Done!! Computer Won!!");
+    } else if (player > 2) {
+        alert("Game Done!! You Won!!");
+    } else {
+        alert("Game Done!! it's a Tie!!");
+    }
+}
 
 
 //calls for every function!
 
 //getComputerChoice();
 //playersChoice();
-play();
+//play();
+fiveRoundGame();
