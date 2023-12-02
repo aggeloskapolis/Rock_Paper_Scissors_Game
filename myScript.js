@@ -10,11 +10,11 @@ function getComputerChoice() {
 function playersChoice() {
     let choice_made = 0;
     while (choice_made == 0) {
-        let choise = prompt('Give your choice :Rock , Paper , Scissors', '');
-        choise = choise.toLowerCase();
-        if (choise == 'rock' || choise == 'paper' || choise == 'scissors') {
+        let choice = prompt('Give your choice :Rock , Paper , Scissors', '');
+        choice = choice.toLowerCase();
+        if (choice == 'rock' || choice == 'paper' || choice == 'scissors') {
             choice_made += 1;
-            return choise;
+            return choice;
         } else {
             alert('The value you choose dont exists. Try again');
         }
